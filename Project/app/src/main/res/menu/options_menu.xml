@@ -7,4 +7,9 @@
         android:icon="@drawable/add"
         android:title="Add"
         app:showAsAction="always" />
+    <item
+        android:id="@+id/delete"
+        android:icon="@drawable/bin"
+        android:title="Delete"
+        app:showAsAction="always" />
 </menu>

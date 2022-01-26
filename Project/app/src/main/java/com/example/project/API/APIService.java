@@ -9,6 +9,7 @@ import com.example.project.models.ProductResp;
 import java.util.List;
 
 import retrofit2.Call;
+import retrofit2.http.DELETE;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
@@ -56,4 +57,7 @@ public interface APIService {
             @Field("packaging") String packaging,
             @Field("stock") Double stock
     );
+
+    @DELETE("products/{product}")
+    Call<ProductResp>deleteProduct(@Header("Authorization") String token,@Path("product") Integer id);
 }

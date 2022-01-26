@@ -8,10 +8,10 @@ import java.util.List;
 public class ProductResp {
     @Expose
     @SerializedName("success")
-    public boolean success;
+    private boolean success;
     @Expose
     @SerializedName("products")
-    public List<Product> products;
+    private List<Product> products;
     @SerializedName("category_id")
     @Expose
     private String categoryId;
